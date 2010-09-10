@@ -9,9 +9,9 @@ My employer, [Liquid Media](http://www.liquidmedia.ca), uses [Teambox](http://ww
 
 I'm a fairly junior developer, working on my productivity. For me, the following things are true in order to get me productive.
 
-  1. I need a sense of accomplishment
-  2. I need a sense of urgency
-  3. I love a sense of fun
+1. I need a sense of accomplishment
+2. I need a sense of urgency
+3. I love a sense of fun
 
 So I've decided to turn Git into a game! Last week I made a very rudimentary "health bar" for a Git Repository. I used Objective-C as my language of choice. All it does is monitor the results of git diff --numstat on a directory. It subtracts the sum of all added and removed lines from your "health", and gives you a visual indicator that you haven't committed, and that by golly, you should!
 
