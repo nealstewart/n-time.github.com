@@ -1,0 +1,19 @@
+#!/usr/bin/ruby
+
+if ARGV[0]
+  t = Time.now
+
+  day = t.day < 10 ? "0#{t.day}" : t.day
+  month = t.month < 10 ? "0#{t.month}" : t.month
+
+  fn = "#{t.year}-#{month}-#{day}-#{ARGV[0]}.markdown"
+
+  File.open(fn, 'w') do |file|  
+    file.puts "---"
+    file.puts "layout: post"
+    file.puts "title: #{ARGV[0]}"
+    file.puts "---"
+  end  
+else
+  puts "Forget a title?"
+end
